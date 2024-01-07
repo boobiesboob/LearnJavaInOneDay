@@ -7,7 +7,7 @@ public class IfDemoWithScanner {
         Scanner input = new Scanner(System.in);
         System.out.println("\nPlease enter your age: ");
         int userAge = input.nextInt();
-        if (0 > userAge || userAge > 100) {
+        if (userAge < 0|| userAge > 100) {
             System.out.println("Invalid age.\nAge must be between 0 and 100");
         } else if (userAge < 18) {
             System.out.println("Sorry. You are underage");
